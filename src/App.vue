@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <HeroList />
+    <HeroList />
   </div>
 </template>
 
@@ -10,7 +10,7 @@ import HeroList from './components/HeroList.vue';
 export default {
   name: 'App',
   components: {
-      HeroList
+    HeroList
   }
 };
 </script>
