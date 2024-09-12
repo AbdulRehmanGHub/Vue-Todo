@@ -39,16 +39,20 @@ export default {
 </script>
 
 <style scoped>
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container {
+    margin: 1rem auto;
+    width: 100%;
+    min-height: 400px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 
-.container {
-    width: 100%;
-    padding: 1rem;
+.top{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,6 +67,8 @@ body {
     background-color: white;
     margin-bottom: 2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-height: 400px;
+    overflow-y: auto;
 }
 
 .hero-item {
@@ -95,7 +101,6 @@ body {
     border: 1px solid #ddd;
     border-radius: 10px;
     outline: none;
-    margin-right: 10px;
 }
 
 .add-hero-container button {
@@ -118,7 +123,8 @@ body {
 
 @media (min-width: 1024px) {
     .container {
-        min-width: 700px;
+        margin: 1.2rem;
+        width: 100%;
         padding: 4rem;
         display: flex;
         flex-direction: column;
@@ -153,7 +159,6 @@ body {
         padding: .6rem;
         border: 2px solid #ddd;
         border-radius: .6rem;
-        margin-right: 1rem;
         font-size: 2rem;
     }
 
